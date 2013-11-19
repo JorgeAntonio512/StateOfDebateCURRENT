@@ -1,0 +1,160 @@
+#chat{
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	height:380px;
+	width:450px;
+	overflow:scroll;
+	border: 1px #000 solid;	
+}
+#contentWrap{
+	display: none;
+	position: relative;
+}
+#chatWrap{
+	float: left;
+}	
+#send-message{	
+border: 1px #000 solid;
+}
+#button{
+	width: 100%;
+}
+
+#users{
+position: relative;
+float: left;
+height: 485px;
+width: 150px;
+overflow:scroll;
+word-wrap: break-word;
+}
+
+textarea {
+		border:2px solid #ccc;
+		padding: 0px;
+		vertical-align: top;
+		width: 99%;
+		max-height: 75px;
+}
+
+.animated {
+		-webkit-transition: height 0.2s;
+		-moz-transition: height 0.2s;
+		transition: height 0.2s;
+}
+		
+.error{
+	color: red;
+}
+
+.whisper{
+	color: gray;
+	font-style: italic;
+}
+
+.leftMessage {
+	position: relative;
+	margin-top: 3px;
+	max-width: 80%;
+	clear: both;
+	float: left;
+	margin-right: auto;
+	padding: 4px 10px 4px 15px; /*position within the border*/
+}
+
+.leftMessage:before{
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 10px 8px 17px; 
+	border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-webkit-border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-moz-border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-o-border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+}
+
+.rightMessage {
+	position: relative;
+	margin-top: 3px;
+	max-width: 80%;
+	clear: both;
+	float: right;
+	margin-left: auto;
+	text-align: right;
+	padding: 4px 15px 4px 10px; /*position within the border*/	
+}
+
+.rightMessage:before {
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 17px 8px 10px; 
+	border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-webkit-border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-moz-border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-o-border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+}
+
+.topOlist {
+	position: relative;
+	margin-top: 3px;
+	max-width: 80%;
+	clear: both;
+	margin-left: auto;
+	text-align: left;
+	padding: 4px 15px 4px 10px; /*position within the border*/	
+}
+
+
+.topOlist:before {
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 17px 8px 10px; 
+	border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-webkit-border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-moz-border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-o-border-image: url(http://stateofdebate.com/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+
+}
+
+
+.restOlist {
+	position: relative;
+	margin-top: 3px;
+	max-width: 80%;
+	clear: both;
+	margin-right: auto;
+	padding: 4px 10px 4px 15px; /*position within the border*/
+}
+
+.restOlist:before{
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 10px 8px 17px; 
+	border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-webkit-border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-moz-border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-o-border-image: url(http://stateofdebate.com/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+}

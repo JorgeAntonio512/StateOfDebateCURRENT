@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>Chat with socket.io and node.js</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="nickWrap" style="">
+		<p>Enter a username:</p>
+		<p id="nickError"></p>
+		<form id="setNick">
+			<input size="35" id="nickname"></input>
+			<input type="submit"></input>
+		</form>
+	</div>
+
+	<div id="contentWrap">
+		<div id="chatWrap">
+			<div id="chat"></div>
+			<form id="send-message">
+				<textarea class='animated' id="message" placeholder="Write a reply..."></textarea>
+  				<input type="submit" id="button" Value="Send"></input>
+			</form>
+		</div>
+		<div id="users"></div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+	<script src="http://www.jacklmoore.com/js/jquery.js"></script>
+	<script src="http://www.jacklmoore.com/js/jquery.autosize.js"></script>
+	<script src='js/app.js'></script>
+</body>
+</html>
